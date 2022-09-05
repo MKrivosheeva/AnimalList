@@ -1,0 +1,103 @@
+package HomeWork;
+
+public class Animal {
+    protected String name;
+    protected Integer age;
+    protected String weight; //тип строка, чтобы исключить ошибки при вводе числа с разными разделителями или запись словами и т.п., так как далее в программе цифровое значение переменной "вес" нигде не применяется
+    protected String color;
+
+
+
+    public String getName() {
+
+        return name;
+    }
+
+    public void setName(String name) {
+
+        this.name = name;
+    }
+
+    public Integer getAge() {
+
+        return age;
+    }
+
+    public void setAge(Integer age) {
+
+        this.age = age;
+    }
+
+    public String getWeight() {
+
+        return weight;
+    }
+
+    public void setWeight(String weight) {
+
+        this.weight = weight;
+    }
+
+    public String getColor() {
+
+        return color;
+    }
+
+    public void setColor(String color) {
+
+        this.color = color;
+    }
+
+    public void say () {
+
+        System.out.println("Я говорю");
+    }
+    public void go () {
+
+        System.out.println("Я иду");
+    }
+    public void drink () {
+
+        System.out.println("Я пью");
+    }
+    public void eat () {
+
+        System.out.println("Я ем");
+    }
+
+    @Override
+    public String toString() {
+        String toString;
+        int lastChar = age%10;
+        String outputAgeNoun;
+        switch (lastChar) {
+            case 2, 3, 4:
+            {
+                if ( (age >=12) & (age <= 14)) {
+                    outputAgeNoun = " лет";
+                }
+                else {
+                    outputAgeNoun = " года";
+                }
+                break;
+            }
+
+            case 1: {          //проверки для возраста больше 100 не приводятся, нецелесообразно для переменной, в которой хранится возраст животного вида кошка/собака/утка
+                if (age == 11) {
+                    outputAgeNoun = " лет";
+                }
+                else {
+                    outputAgeNoun = " год";
+                }
+                break;
+            }
+            default:
+            {
+                outputAgeNoun = " лет";
+            }
+        }
+        toString = "Привет! Меня зовут " + name + ", мне " + age + outputAgeNoun + ", я вешу " + weight + " кг, мой цвет - " + color + ".";
+        return toString;
+    }
+
+}
