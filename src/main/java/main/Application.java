@@ -1,6 +1,7 @@
 package main;
 
-import src.data.Commands;
+import animals.Animal;
+import data.Commands;
 
 import java.util.ArrayList;
 

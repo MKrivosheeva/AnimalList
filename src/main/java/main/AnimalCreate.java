@@ -1,9 +1,10 @@
 package main;
 
+import animals.Animal;
 import animals.birds.Duck;
 import animals.pets.Cat;
 import animals.pets.Dog;
-import src.data.AnimalTypes;
+import data.AnimalTypes;
 
 public class AnimalCreate {
     protected static Animal animal;

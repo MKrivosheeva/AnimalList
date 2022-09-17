@@ -1,7 +1,6 @@
 package main;
 
-import main.InputService;
-import src.data.Commands;
+import data.Commands;
 
 public class Menu {
 
@@ -17,6 +16,20 @@ public class Menu {
             System.out.println("Для завершения работы введите exit");
             menu = enterCommand.inputText().trim().toUpperCase();
             errorInput = false;
+            errorInput = false;
+
+//            for(Commands command: Commands.values()) {
+//                if(command.name().equals(menu)) {
+//                    errorInput = true;
+//                    break;
+//                }
+//            }
+//
+//            if(!errorInput) {
+//                System.out.println("Команда введена неверно, попробуйте ещё раз.");
+//                continue;
+//            }
+
             try {
                 userCommandInput = Commands.valueOf(menu);
             } catch (IllegalArgumentException menuError) {

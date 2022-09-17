@@ -1,6 +1,6 @@
 package animals.pets;
 
-import main.Animal;
+import animals.Animal;
 
 public class Dog extends Animal {
 

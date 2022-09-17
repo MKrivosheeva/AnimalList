@@ -1,7 +1,6 @@
 package animals.birds;
 
-import main.Animal;
-import main.Flying;
+import animals.Animal;
 
 public class Duck extends Animal implements Flying {
 
