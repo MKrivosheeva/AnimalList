@@ -17,19 +17,6 @@ public class Menu {
             menu = enterCommand.inputText().trim().toUpperCase();
             errorInput = false;
             errorInput = false;
-
-//            for(Commands command: Commands.values()) {
-//                if(command.name().equals(menu)) {
-//                    errorInput = true;
-//                    break;
-//                }
-//            }
-//
-//            if(!errorInput) {
-//                System.out.println("Команда введена неверно, попробуйте ещё раз.");
-//                continue;
-//            }
-
             try {
                 userCommandInput = Commands.valueOf(menu);
             } catch (IllegalArgumentException menuError) {
@@ -41,6 +28,4 @@ public class Menu {
         while (errorInput);
         return Commands.valueOf(menu);
     }
-
-
 }
