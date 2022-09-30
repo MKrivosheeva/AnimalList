@@ -6,8 +6,6 @@ public abstract class Animal {
     protected int weight;
     protected String color;
 
-
-
     public String getName() {
 
         return name;
