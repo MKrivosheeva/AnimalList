@@ -2,5 +2,5 @@ package main;
 
 public interface IScanner {
     public String inputText();
-    public Integer inputNumber();
+    public Float inputNumber();
 }

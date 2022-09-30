@@ -7,9 +7,9 @@ public class AnimalProperties {
         return myNameIs;
 
     }
-    public static int inputWeight() {
+    public static Float inputWeight() {
         System.out.println("Введите вес вашего животного (в килограммах)");
-        int myWeightIs = new InputService().inputNumber();
+        Float myWeightIs = new InputService().inputNumber();
         return myWeightIs;
     }
 
@@ -19,9 +19,9 @@ public class AnimalProperties {
         return myColorIs;
     }
 
-    public static int inputAge() {
+    public static Float inputAge() {
         System.out.println("Введите возраст животного (целое число)");
-        Integer myAgeIs = new InputService().inputNumber();
+        Float myAgeIs = new InputService().inputNumber();
         return myAgeIs;
     }
 

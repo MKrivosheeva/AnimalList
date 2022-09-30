@@ -12,14 +12,14 @@ public class InputService implements IScanner {
     }
 
     @Override
-    public Integer inputNumber() {
+    public Float inputNumber() {
         Scanner sc = new Scanner(System.in);
-        int thisInputNumber;
-        while (!sc.hasNextInt()) {
-            System.out.println("Введите целое число");
+        Float thisInputNumber;
+        while (!sc.hasNextFloat()) {
+            System.out.println("Введите целое число или десятичную дробь (разделитель целой и дробной частей - запятая)");
             sc.next();
         }
-        thisInputNumber = sc.nextInt();
+        thisInputNumber = sc.nextFloat();
         return thisInputNumber;
     }
 }

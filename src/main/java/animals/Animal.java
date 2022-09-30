@@ -2,8 +2,8 @@ package animals;
 
 public abstract class Animal {
     protected String name;
-    protected int age;
-    protected int weight;
+    protected float age;
+    protected float weight;
     protected String color;
 
     public String getName() {
@@ -16,22 +16,22 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public Integer getAge() {
+    public Float getAge() {
 
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(Float age) {
 
         this.age = age;
     }
 
-    public Integer getWeight() {
+    public Float getWeight() {
 
         return weight;
     }
 
-    public void setWeight(Integer weight) {
+    public void setWeight(Float weight) {
 
         this.weight = weight;
     }
@@ -66,7 +66,7 @@ public abstract class Animal {
     @Override
     public String toString() {
         String toString;
-        int lastChar = age%10;
+        int lastChar =  (int) age%10;
         String outputAgeNoun;
         switch (lastChar) {
             case 2, 3, 4:
