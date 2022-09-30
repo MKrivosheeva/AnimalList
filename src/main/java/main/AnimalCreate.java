@@ -5,7 +5,6 @@ import animals.birds.Duck;
 import animals.pets.Cat;
 import animals.pets.Dog;
 import data.AnimalTypes;
-import data.Commands;
 
 public class AnimalCreate {
     protected static Animal animal = null;
