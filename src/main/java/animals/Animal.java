@@ -16,22 +16,22 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public Float getAge() {
+    public float getAge() {
 
         return age;
     }
 
-    public void setAge(Float age) {
+    public void setAge(float age) {
 
         this.age = age;
     }
 
-    public Float getWeight() {
+    public float getWeight() {
 
         return weight;
     }
 
-    public void setWeight(Float weight) {
+    public void setWeight(float weight) {
 
         this.weight = weight;
     }
