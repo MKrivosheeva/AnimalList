@@ -20,8 +20,9 @@ public class AnimalProperties {
     }
 
     public static Float inputAge() {
-        System.out.println("Введите возраст животного (целое число)");
-        Float myAgeIs = new InputService().inputNumber();
+        Float myAgeIs;
+        System.out.println("Введите возраст животного");
+        myAgeIs = new InputService().inputNumber();
         return myAgeIs;
     }
 
